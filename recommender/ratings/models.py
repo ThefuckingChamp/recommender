@@ -8,8 +8,16 @@ class Movie(Base):
     __tablename__ = 'movies'
 
     id = Column(Integer, primary_key=True)
+    budget = Column(Integer)
+    genres = Column(Integer)
+    original_language = (Integer)
     title = Column(String)
     summary = Column(String)
+    popularity = Column(Float)
+    revenue = Column(Integer)
+    vote_average = Column(Float)
+    vote_count = Column(Integer)
+
     # TODO: Add more attributes
 
     ratings = relationship('Rating', back_populates='movie')

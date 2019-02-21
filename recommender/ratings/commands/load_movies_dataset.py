@@ -51,6 +51,18 @@ def load_movies(path):
             'index': 5,
             'parse_func': int
         },
+        'budget': {
+            'index': 2,
+            'parse_func': int
+        },
+        'genres': {
+            'index': 3,
+            'parse_func': int
+        },
+        'popularity': {
+            'index': 10,
+            'parse_func': int
+        },
         'title': {
             'index': 20,
             'parse_func': str
@@ -58,7 +70,20 @@ def load_movies(path):
         'summary': {
             'index': 9,
             'parse_func': str
+        },
+        'revenue': {
+            'index': 15,
+            'parse_func': int
+        },
+        'vote_average': {
+            'index': 22,
+            'parse_func': float
+        },
+        'vote_count': {
+            'index': 22,
+            'parse_func': int
         }
+
     }
     _load_base(path, Movie, movies_index_mapping)
 
